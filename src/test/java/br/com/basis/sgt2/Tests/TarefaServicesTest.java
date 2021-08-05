@@ -52,7 +52,7 @@ public class TarefaServicesTest {
 
     }
     @Test
-    public void obterTarefaDeveriaRetornarNuloQuandoIdInexistente(){
+    public void obterTarefaPorIDDeveriaRetornarNuloQuandoIdInexistente(){
         TarefaDTO tarefaDTO = tarefaServices.obterPorId(idInexistente);
         Assertions.assertNull(tarefaDTO);
 
