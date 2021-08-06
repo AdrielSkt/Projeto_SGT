@@ -13,6 +13,7 @@ import { MenuListComponent } from './views/home/menu-list/menu-list.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatTableModule} from '@angular/material/table';
 
+
 @NgModule({
   declarations: [
     AppComponent,
