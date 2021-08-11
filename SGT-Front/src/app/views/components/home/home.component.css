@@ -1,0 +1,19 @@
+.mat-elevation-z8{
+
+    width: 80%;
+    height: 50%;
+    margin: 1rem auto 0 auto ;
+   background-image: url("../../../../assets/img/cropped-1920-1080-288260.png");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center center;
+    
+        
+}
+.neon{
+
+    width: 80%;
+    height: 1%;
+    margin: 1rem auto 0 auto ;
+    background-image: linear-gradient( to right,#020024, #4403f7, #020024);
+}

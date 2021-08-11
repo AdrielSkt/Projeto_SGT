@@ -1,0 +1,21 @@
+.container{
+    height: 89%;
+    background-color: rgb(241, 253, 255);
+}
+.draw{
+background-color: rgb(3, 4, 34);
+
+}
+i{
+    color: blue;
+    margin-right: 1rem;
+}
+.nav-list{
+    color: blanchedalmond;
+    text-decoration-color: blanchedalmond;
+}
+
+mat-nav-list a{
+
+    color: cornsilk;
+}

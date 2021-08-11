@@ -1,0 +1,16 @@
+.header {
+    height: 6%;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.line{
+    height: 1%;
+    background-image: linear-gradient( to right,#020024, #4403f7, #020024);
+}

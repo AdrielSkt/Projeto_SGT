@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping(value = "/api")//("/api/tarefas")
 @RequiredArgsConstructor
@@ -21,6 +22,8 @@ public class TarefaResouce {
     public ResponseEntity<List<TarefaDTO>> exibirTarefas(){
         return ResponseEntity.ok(tarefaServices.obterTodos());
 }
+
+
     @GetMapping("/tarefas/{id}")
     public ResponseEntity<TarefaDTO> obterPorId(@PathVariable("id") Long id) {
         return new ResponseEntity<>(tarefaServices.obterPorId(id), HttpStatus.OK);
@@ -31,12 +34,12 @@ public class TarefaResouce {
         return ResponseEntity.ok(tarefaServices.salvar(tarefa));
     }
 
-    @PutMapping("/tarefa")
+    @PutMapping("/tarefas")
     public ResponseEntity<TarefaDTO> atualizarTarefa(@RequestBody TarefaDTO tarefa){
         return ResponseEntity.ok(tarefaServices.atualizar(tarefa));
 
     }
-    @DeleteMapping("/tarefa/{id}")
+    @DeleteMapping("/tarefas/{id}")
     public ResponseEntity<Void> deletarPorId(@PathVariable("id") Long id) {
         tarefaServices.deletarPorId(id);
         return new ResponseEntity<>(HttpStatus.OK);

@@ -1,0 +1,26 @@
+
+   <mat-drawer-container class="container">
+    <mat-drawer class="draw" mode="side" opened>   
+        
+        <mat-nav-list class="nav-list">
+        <a mat-list-item routerLink="/">
+        <i class="material-icons">home</i>home
+        </a>
+        <a mat-list-item routerLink="responsaveis">
+        <i class="material-icons">people</i>Responsaveis
+        </a>
+
+        <a mat-list-item routerLink="/">
+        <i class="material-icons">assignment</i>Tarefas
+        </a>
+    </mat-nav-list>
+  </mat-drawer>
+    
+    <mat-drawer-content>
+      <router-outlet></router-outlet>
+
+    </mat-drawer-content>
+
+
+  </mat-drawer-container> 
+

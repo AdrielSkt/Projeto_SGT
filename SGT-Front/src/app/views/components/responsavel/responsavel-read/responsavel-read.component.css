@@ -1,0 +1,26 @@
+.container{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+
+
+  }
+
+  table{
+width: 100%;
+background-color:rgba(2, 5, 41, 0.61);
+color: white;
+  }
+  
+ng-container td{
+    background-color: blue;
+    color: white;
+  }
+
+  table th{
+    color: white;
+  }
+  table td{
+      color: white;
+  }

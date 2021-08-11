@@ -1,0 +1,18 @@
+.footer{
+    height: 4%;
+    color: white;
+    background-color: #020024;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.create{
+color: rgb(12, 8, 226);
+margin: auto;
+font-size: 1rem;
+border-radius: 1px solid rgb(58,57,57);
+padding: 0 8%;
+
+}
