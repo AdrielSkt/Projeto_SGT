@@ -1,0 +1,30 @@
+<div class="mat-elevation-z8 container">
+  <table mat-table [dataSource]="dataSource">
+
+    <!-- id Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> ID </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+
+    <!-- data inicio Column -->
+    <ng-container matColumnDef="dataInicio">
+      <th mat-header-cell *matHeaderCellDef> DATA INICIO </th>
+      <td mat-cell *matCellDef="let element"> {{element.dataInicio}} </td>
+    </ng-container>
+
+    <!-- termino previsto Column -->
+    <ng-container matColumnDef="terminoPrevisto">
+      <th mat-header-cell *matHeaderCellDef> TERMINO PREVISTO </th>
+      <td mat-cell *matCellDef="let element"> {{element.terminoPrevisto}} </td>
+    </ng-container>
+
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <mat-paginator [pageSizeOptions]="[11, 22]" showFirstLastButtons aria-label="Select page of periodic elements">
+  </mat-paginator>
+</div>

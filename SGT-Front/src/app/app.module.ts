@@ -27,6 +27,7 @@ import {MatTreeModule} from '@angular/material/tree';
 import { HomeComponent } from './views/components/home/home.component';
 import { ResponsavelReadComponent } from './views/components/responsavel/responsavel-read/responsavel-read.component';
 import { ResponsavelCreateComponent } from './views/components/responsavel/responsavel-create/responsavel-create.component';
+import { TarefasReadComponent } from './views/components/tarefas/tarefas-read/tarefas-read.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { ResponsavelCreateComponent } from './views/components/responsavel/respo
     HomeComponent,
     ResponsavelReadComponent,
     ResponsavelCreateComponent,
+    TarefasReadComponent,
 
     
   
