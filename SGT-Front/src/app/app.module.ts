@@ -28,6 +28,8 @@ import { HomeComponent } from './views/components/home/home.component';
 import { ResponsavelReadComponent } from './views/components/responsavel/responsavel-read/responsavel-read.component';
 import { ResponsavelCreateComponent } from './views/components/responsavel/responsavel-create/responsavel-create.component';
 import { TarefasReadComponent } from './views/components/tarefas/tarefas-read/tarefas-read.component';
+import { ComentariosReadComponent } from './views/components/comentarios/comentarios-read/comentarios-read.component';
+
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { TarefasReadComponent } from './views/components/tarefas/tarefas-read/ta
     ResponsavelReadComponent,
     ResponsavelCreateComponent,
     TarefasReadComponent,
+    ComentariosReadComponent,
+
 
     
   
