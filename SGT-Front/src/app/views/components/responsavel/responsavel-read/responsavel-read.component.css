@@ -1,11 +1,45 @@
-.container{
+h1{
+  margin-top: 2%;
+  text-align: center;
+  margin-right: 10%;
+  font-size: 2rem;
+  color: black;
+
+}
+
+.neon{
+
+  padding: 0;
+  height: 1%;
+  margin: 1rem auto  auto ;
+  margin-right: 25%;
+  background-image: linear-gradient( to right,#020024, #4403f7, #020024);
+}
+
+.create{
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+ 
+}
+
+.create button{
+margin-top: 1%;
+}
+
+h3{
+
+  margin-left: 2%;
+
+}
+/* .container{
     width: 90%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 50px;
 
 
-  }
+  } */
 
   table{
 width: 100%;

@@ -1,7 +1,7 @@
 .header {
     height: 6%;
     color: white;
-    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient( to right,#020024, #1d0364, #020024);
     align-items: center;
     justify-content: center;
 }

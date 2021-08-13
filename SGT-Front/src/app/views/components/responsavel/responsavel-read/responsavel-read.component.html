@@ -1,3 +1,20 @@
+
+  <h1>RESPONSAVEIS</h1>
+
+<mat-card class="neon" style="width: 60%;">
+
+</mat-card>
+
+<div class="create">
+    <button (click)="navigateToCreate()" class="mat-elevation-z8" mat-fab color="primary" >
+      <mat-icon>add</mat-icon>
+    </button>
+    
+</div>
+
+<h3>Adicionar Responsavel</h3>
+
+
 <div class="mat-elevation-z8 container">
     <table mat-table [dataSource]="dataSource">
   
@@ -18,7 +35,7 @@
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
   
-    <mat-paginator [pageSizeOptions]="[14, 24]"
+    <mat-paginator [pageSizeOptions]="[11, 22]"
                    showFirstLastButtons 
                    aria-label="Select page of periodic elements">
     </mat-paginator>
