@@ -32,16 +32,18 @@
       <td mat-cell *matCellDef="let element"> {{element.status}} </td>
     </ng-container>
 
-        <!-- status previsto Column -->
-        <ng-container matColumnDef="responsavel">
-          <th mat-header-cell *matHeaderCellDef> RESPONSAVEL</th>
-          
-          <td mat-cell *matCellDef="let element"> {{element.responsavel.nome}} {{element.responsavel.id}}</td>
-          
-        </ng-container>
+    <!-- status previsto Column -->
+    <ng-container matColumnDef="responsavel">
+      <th mat-header-cell *matHeaderCellDef> RESPONSAVEL</th>
+      <td mat-cell *matCellDef="let element"> {{element.responsavel.nome}} {{element.responsavel.id}}</td>
+    </ng-container>
 
-        
 
+    <ng-container matColumnDef="comentarios">
+      <th mat-header-cell *matHeaderCellDef> COMENTARIOS </th>
+      <td mat-cell *matCellDef="let element">  <button (click) = "findComents(element)" class= "coments" mat-flat-button>Comentarios</button> </td>
+     
+    </ng-container>
 
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
@@ -53,6 +55,4 @@
 </div>
 
 
-  <app-comentarios-read></app-comentarios-read>
-
-
+<app-comentarios-read [tarefa] = "tarefaUnic" ></app-comentarios-read>

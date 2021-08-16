@@ -12,8 +12,9 @@ import { TarefaService } from 'src/app/services/tarefa.service';
 })
 export class TarefasReadComponent implements AfterViewInit {
   tarefas: Tarefa[] = [];
+  tarefaUnic!: Tarefa;
   
-  displayedColumns: string[] = ['id','dataInicio','terminoPrevisto','horasEfetivas','status','responsavel', ];
+  displayedColumns: string[] = ['id','dataInicio','terminoPrevisto','horasEfetivas','status','responsavel','comentarios' ];
     dataSource = new MatTableDataSource<Tarefa>(this.tarefas);
   
   
@@ -35,4 +36,11 @@ export class TarefasReadComponent implements AfterViewInit {
     })
   
   }
+  findComents(element:Tarefa):void{
+    this.tarefaUnic = element;
+    console.log(element);
+
+
+  }
+
 }
