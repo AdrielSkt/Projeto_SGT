@@ -43,4 +43,9 @@ export class TarefasReadComponent implements AfterViewInit {
 
   }
 
+  navigateToCreate():void{
+    this.router.navigate(['tarefas/create']);
+
+  }
+
 }

@@ -1,0 +1,41 @@
+<h1>Adicionar nova Tarefa</h1>
+
+<form class="form">
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label>Data de Inicio</mat-label>
+      <input [(ngModel)]="tarefa.dataInicio" name="DataInicio" matInput placeholder="Ex. João" >
+    </mat-form-field>
+
+    <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Termino Previsto</mat-label>
+        <input [(ngModel)]="tarefa.terminoPrevisto" name="TerminoPrevisto" matInput placeholder="Ex. João" >
+      </mat-form-field>
+
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Horas Efetivas</mat-label>
+        <input [(ngModel)]="tarefa.horasEfetivas" name="horasEfetivas" matInput placeholder="Ex. João" >
+      </mat-form-field>
+
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Status</mat-label>
+        <input [(ngModel)]="tarefa.status" name="status" matInput placeholder="Ex. João" >
+      </mat-form-field>
+
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Selecione um Reponsavel</mat-label>
+        <mat-select [(value)]="selected">
+          <mat-option>None</mat-option>
+          <mat-option value="option1">Option 1</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+
+
+
+
+    
+    <br>
+    <button (click)="create()"mat-stroked-button color="Disabled">ADICIONAR</button>
+    <button (click)="cancelar()"mat-stroked-button color="warn">CANCELAR</button>
+  </form>
+  
