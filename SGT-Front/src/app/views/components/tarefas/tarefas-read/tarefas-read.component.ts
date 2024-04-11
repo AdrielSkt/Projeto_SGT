@@ -12,13 +12,15 @@ import { TarefaService } from 'src/app/services/tarefa.service';
 })
 export class TarefasReadComponent implements AfterViewInit {
   tarefas: Tarefa[] = [];
+  tarefaUnic!: Tarefa;
   
-  displayedColumns: string[] = ['id','dataInicio','terminoPrevisto',];
+  displayedColumns: string[] = ['id','dataInicio','terminoPrevisto','horasEfetivas','status','responsavel','comentarios' ];
     dataSource = new MatTableDataSource<Tarefa>(this.tarefas);
   
+  
+
     @ViewChild(MatPaginator) paginator!: MatPaginator;
   
-    // constructor(private service: ResponsavelService, private router: Router){}
     constructor(private service: TarefaService, private router: Router){}
   
     ngAfterViewInit() {
@@ -30,7 +32,20 @@ export class TarefasReadComponent implements AfterViewInit {
         this.tarefas = resposta;
         this.dataSource = new MatTableDataSource<Tarefa>(this.tarefas);
         this.dataSource.paginator = this.paginator;
+        console.log(resposta);
     })
   
   }
+  findComents(element:Tarefa):void{
+    this.tarefaUnic = element;
+    console.log(element);
+
+
+  }
+
+  navigateToCreate():void{
+    this.router.navigate(['tarefas/create']);
+
+  }
+
 }

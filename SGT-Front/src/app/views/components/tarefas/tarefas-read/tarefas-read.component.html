@@ -1,3 +1,17 @@
+<div class="create">
+  <button (click)="navigateToCreate()" class="mat-elevation-z8" mat-fab color="primary" >
+    <mat-icon>add</mat-icon>
+  </button>
+</div>
+
+
+
+
+<mat-card class="titulo">
+  <h2>TAREFAS</h2>
+</mat-card>
+
+
 <div class="mat-elevation-z8 container">
   <table mat-table [dataSource]="dataSource">
 
@@ -19,6 +33,31 @@
       <td mat-cell *matCellDef="let element"> {{element.terminoPrevisto}} </td>
     </ng-container>
 
+    <!-- horas efetivas Column -->
+    <ng-container matColumnDef="horasEfetivas">
+      <th mat-header-cell *matHeaderCellDef> HORAS EFETIVAS </th>
+      <td mat-cell *matCellDef="let element"> {{element.horasEfetivas}} </td>
+    </ng-container>
+
+
+    <!-- status Column -->
+    <ng-container matColumnDef="status">
+      <th mat-header-cell *matHeaderCellDef> STATUS</th>
+      <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+    </ng-container>
+
+    <!-- status previsto Column -->
+    <ng-container matColumnDef="responsavel">
+      <th mat-header-cell *matHeaderCellDef> RESPONSAVEL</th>
+      <td mat-cell *matCellDef="let element"> {{element.responsavel.nome}} {{element.responsavel.id}}</td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="comentarios">
+      <th mat-header-cell *matHeaderCellDef> COMENTARIOS </th>
+      <td mat-cell *matCellDef="let element">  <button (click) = "findComents(element)" class= "coments" mat-flat-button>Comentarios</button> </td>
+     
+    </ng-container>
 
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
@@ -28,3 +67,6 @@
   <mat-paginator [pageSizeOptions]="[11, 22]" showFirstLastButtons aria-label="Select page of periodic elements">
   </mat-paginator>
 </div>
+
+
+<app-comentarios-read [tarefa] = "tarefaUnic" ></app-comentarios-read>

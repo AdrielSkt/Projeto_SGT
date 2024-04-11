@@ -25,7 +25,7 @@ export class ResponsavelService {
    return this.http.post<Responsavel>(url, responsavel);
   }
   messege(msg: string): void{
-      this.snack.open('$msg','OK', {horizontalPosition:'end', verticalPosition:'top', duration:4000 } )
+      this.snack.open(msg,'OK', {horizontalPosition:'end', verticalPosition:'top', duration:4000 } )
 
   }
 }

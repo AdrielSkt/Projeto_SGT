@@ -1,0 +1,26 @@
+table{
+    width: 100%;
+    background-color:rgb(14, 17, 58);
+    color: white;
+      }
+      
+      .titulo{
+        width: 88%;
+        margin-right: 200px;
+        margin-left: 85px;
+        margin-top: 50px;
+        background-color:rgb(14, 17, 58);
+      }
+      h2{
+        text-align: center;
+        color: white;
+
+      }
+      .container{
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 3px;
+  
+  
+      }

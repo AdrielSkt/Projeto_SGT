@@ -1,0 +1,23 @@
+<mat-card class="titulo">
+    <h2>COMENTARIOS</h2>
+</mat-card>
+
+
+ <div class="mat-elevation-z8 container">
+    <table>
+  
+      <div *ngFor="let comentario of tarefa?.comentario" >
+
+        <h3> <b>Comentario Nº {{comentario.id}}</b> </h3>
+        <p>
+          - {{comentario.comentario}}
+        </p>
+    
+      </div>
+    </table>  
+  
+    <mat-paginator [pageSizeOptions]="[11,24]"
+                   showFirstLastButtons 
+                   aria-label="Select page of periodic elements">
+    </mat-paginator>
+  </div>
